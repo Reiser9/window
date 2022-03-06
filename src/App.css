@@ -230,6 +230,10 @@ body{
     font-family: 'Gilroy', sans-serif;
 }
 
+.scroll{
+    overflow: hidden;
+}
+
 *,
 *:after,
 *:before{
@@ -306,7 +310,8 @@ input::-webkit-inner-spin-button{
 }
 
 .input{
-    
+    border: none;
+    outline: none;
 }
 
 .input::placeholder{
@@ -344,9 +349,69 @@ input::-webkit-inner-spin-button{
     align-items: center;
 }
 
+.template{
+    padding: 7.5rem 0;
+    background: #F8F9FA;
+}
+
+.title{
+    color: #151515;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.center{
+    text-align: center;
+}
+
+.text__inner{
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.text{
+    color: #5b5b5b;
+    font-size: 1.8rem;
+}
+
+.default__margin{
+    margin-top: 5rem;
+}
+
+.form__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.3rem;
+    font-weight: 600;
+    padding: 2.3rem 3rem;
+}
+
+.input__checkbox{
+    display: none;
+}
+
+.input__checkbox:checked + .form__input--label:after{
+    opacity: 1;
+}
+
+.slider{
+    padding: 0rem 0rem 5rem 0;
+}
+
 /* Шапка */
 .header{
+    width: 100%;
     background: #363636;
+    transition: .2s linear;
+}
+
+.header.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .header__inner{
@@ -381,7 +446,7 @@ input::-webkit-inner-spin-button{
     background: #21b24a;
 }
 
-.header__nav--link:hover .header__nav--link--arrow{
+.header__nav--link:hover .header__nav--link--arrow, .header__nav--link--arrow.active{
     transform: rotate(-180deg);
 }
 
@@ -424,7 +489,7 @@ input::-webkit-inner-spin-button{
     color: #21b24a;
 }
 
-.menu{
+.menu, .close{
     display: none;
     cursor: pointer;
 }
@@ -487,6 +552,302 @@ input::-webkit-inner-spin-button{
     padding: 2rem 5.5rem;
 }
 
+.point__inner{
+    margin-top: 1.5rem;
+}
+
+.point__text{
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.point__text:before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #5B5B5B;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.wrap__text{
+    margin-top: 1.5rem;
+}
+
+.wrap__text:first-child{
+    margin-top: 0;
+}
+
+/* Стоимость */
+.price__button{
+    margin-top: 5rem;
+}
+
+.tab__inner{
+    width: 100%;
+    border-bottom: 4px solid #EAEDF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab__item{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #989898;
+    padding: 0rem 2rem 1.5rem 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: .2s linear;
+}
+
+.tab__item:before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #21b24a;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: .2s linear;
+    opacity: 0;
+}
+
+.tab__item.active:before, .tab__item:hover:before{
+    opacity: 1;
+}
+
+.tab__item.active{
+    color: #21b24a;
+}
+
+.tab__content{
+    display: none;
+    margin-top: 3rem;
+}
+
+.tab__content.active{
+    display: flex;
+}
+
+.price__item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    background: #FFF;
+}
+
+.price__item:nth-child(even){
+    background: #EFF1F4;
+}
+
+.price__item--title, .price__item--value{
+    font-size: 2.4rem;
+    color: #151515;
+    font-weight: 600;
+}
+
+.price__item--value{
+    font-weight: 500;
+}
+
+/* Наши работы */
+.work__content{
+    width: 100%;
+    padding: 0rem 3rem;
+}
+
+.work__item--img{
+    width: 100%;
+    height: auto;
+}
+
+.work__item--title{
+    margin-top: 2rem;
+    color: #151515;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.work__item--more{
+    margin-top: 1.5rem;
+    color: #21b24a;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* О нас */
+.about__inner{
+    position: relative;
+}
+
+.about__img{
+    max-width: 100%;
+}
+
+.about__text--inner{
+    max-width: 750px;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    padding: 4rem 5.5rem;
+    background: #fff;
+}
+
+/* Отзывы */
+.review__content{
+    width: 100%;
+    padding: 0rem 3rem 5rem 3rem;
+}
+
+.review__item{
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 7.39344px 21.6116px rgba(154, 170, 207, 0.04);
+    padding: 4rem;
+}
+
+.review__item--text{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: #5b5b5b;
+}
+
+.review__item--name{
+    margin-top: 3rem;
+    color: #151515;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.slick__dot{
+    width: 8px;
+    height: 8px;
+    background: #21B24A;
+    border-radius: 50px;
+    transition: .2s linear;
+}
+
+.slick__dot.swiper-pagination-bullet-active{
+    width: 32px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 2rem;
+    color: #414141; 
+}
+
+.swiper-button-next, .swiper-button-prev{
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.swiper-button-next{
+    left: auto;
+    right: 0;
+}
+
+/* Форма */
+.form{
+    padding: 9rem 0;
+}
+
+.form__inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__text--inner{
+    max-width: 550px;
+}
+
+.form__content{
+    max-width: 570px;
+    background: #FFFFFF;
+    box-shadow: 0px 7.39344px 21.6116px rgba(154, 170, 207, 0.15);
+    padding: 5rem;
+}
+
+.form__input--inner{
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.form__input--inner:first-child{
+    margin-top: 0;
+}
+
+.form__input{
+    width: 100%;
+    padding: 1.5rem 1.1rem;
+    border-bottom: 1px solid #CECECE;
+    color: #5b5b5b;
+}
+
+.form__input:focus{
+    border-bottom: 1px solid #21B24A;
+}
+
+.form__input--label--inner{
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.form__input--label{
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.form__input--label:before, .form__input--label:after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.form__input--label:after{
+    width: 11px;
+    height: 11px;
+    border: none;
+    background: #21B24A;
+    left: 2px;
+    top: 4px;
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.input__placeholder{
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 11px;
+    pointer-events: none;
+    color: #a5a5a5;
+    transition: .2s linear;
+}
+
+.input__placeholder.active, .form__input:focus + .input__placeholder{
+    bottom: 100%;
+    transform: translateY(50%);
+    font-size: 1.4rem;
+    color: #cecece;
+}
+
 /* Подвал */
 .footer{
     padding: 10.6rem 0rem 2.5rem 0;
@@ -542,6 +903,54 @@ a.footer__item--nav--link:hover{
     color: #fff;
 }
 
+/* Модальное меню */
+.modal__menu{
+    width: 100%;
+    height: calc(100vh - 77px);
+    overflow-y: auto;
+    position: fixed;
+    top: 77px;
+    left: 0;
+    background: #464646;
+    z-index: 100;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    transform: translateX(-110%);
+}
+
+.modal__menu.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.modal__menu--inner{
+    padding: 3rem 0;
+}
+
+.modal__menu--link{
+    color: #fff;
+    margin-top: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal__menu--link:first-child{
+    margin-top: 0;
+}
+
+.mobile__call{
+    display: none;
+}
+
+.modal__menu--dropdown{
+    display: none;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
 /* Адаптив */
 @media(max-width: 1340px){
     .container{
@@ -561,6 +970,27 @@ a.footer__item--nav--link:hover{
     .header__call{
         padding: 1.3rem 1.8rem;
     }
+
+    .form__text--inner, .form__content{
+        max-width: 430px;
+    }
+
+    .form__content{
+        padding: 2rem;
+    }
+
+    .review__item--text{
+        font-size: 1.6rem;
+    }
+
+    .review__item--name, .work__item--title{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .tab__item, .price__item--title, .price__item--value{
+        font-size: 2rem;
+    }
 }
 @media(max-width: 998px){
     .container{
@@ -575,7 +1005,7 @@ a.footer__item--nav--link:hover{
         display: none;
     }
 
-    .menu{
+    .menu.active, .close.active{
         display: block;
     }
 
@@ -599,6 +1029,37 @@ a.footer__item--nav--link:hover{
 
     .single__title{
         font-size: 4.5rem;
+    }
+
+    .title{
+        font-size: 3.5rem;
+    }
+
+    .default__margin{
+        margin-top: 3rem;
+    }
+
+    .template, .form{
+        padding: 4.5rem 0;
+    }
+
+    .form__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__text--inner{
+        max-width: 100%;
+    }
+
+    .form__content{
+        margin-top: 3rem;
+    }
+
+    .about__text--inner{
+        position: relative;
+        bottom: 0;
+        padding: 2.5rem;
     }
 }
 @media(max-width: 768px){
@@ -635,6 +1096,59 @@ a.footer__item--nav--link:hover{
         display: flex;
         justify-content: center;
     }
+
+    .text__inner{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .text{
+        font-size: 1.6rem;
+    }
+
+    .title{
+        font-size: 3rem;
+    }
+
+    .form__content{
+        max-width: 100%;
+    }
+
+    .form__input{
+        padding: 1rem;
+    }
+
+    .review__item{
+        padding: 2rem;
+    }
+
+    .price__button{
+        margin-top: 2rem;
+    }
+
+    .tab__inner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tab__item{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+        background: #fff;
+    }
+
+    .tab__item.active{
+        background: #21B24A;
+        color: #fff;
+    }
+
+    .tab__item:before{
+        display: none;
+    }
+
+    .price__item{
+        padding: 1.3rem 2rem;
+    }
 }
 @media(max-width: 480px){
     .container{
@@ -645,11 +1159,52 @@ a.footer__item--nav--link:hover{
         display: none;
     }
 
+    .mobile__call{
+        display: flex;
+        margin-top: 3rem;
+    }
+
     .footer__item--nav--inner{
         margin-top: 2rem;
     }
 
     .single{
         padding: 3rem 0;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+
+    .review__content{
+        padding: 0rem 0rem 5rem 0;
+    }
+
+    .template, .form{
+        padding: 3rem 0;
+    }
+
+    .about__text--inner{
+        padding: 1.5rem;
+    }
+
+    .work__content{
+        padding: 0;
+    }
+
+    .default__margin{
+        margin-top: 2rem;
+    }
+
+    .tab__item, .price__item--title, .price__item--value{
+        font-size: 1.8rem;
+    }
+
+    .tab__content{
+        margin-top: 2rem;
     }
 }

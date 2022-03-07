@@ -1,0 +1,120 @@
+/* Стоимость */
+.price__button{
+    margin-top: 5rem;
+}
+
+.tab__inner{
+    width: 100%;
+    border-bottom: 4px solid #EAEDF4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab__item{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #989898;
+    padding: 0rem 2rem 1.5rem 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: .2s linear;
+}
+
+.tab__item:before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #21b24a;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: .2s linear;
+    opacity: 0;
+}
+
+.tab__item.active:before, .tab__item:hover:before{
+    opacity: 1;
+}
+
+.tab__item.active{
+    color: #21b24a;
+}
+
+.tab__content{
+    display: none;
+    margin-top: 3rem;
+}
+
+.tab__content.active{
+    display: flex;
+}
+
+.price__item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    background: #FFF;
+}
+
+.price__item:nth-child(even){
+    background: #EFF1F4;
+}
+
+.price__item--title, .price__item--value{
+    font-size: 2.4rem;
+    color: #151515;
+    font-weight: 600;
+}
+
+.price__item--value{
+    font-weight: 500;
+}
+
+@media(max-width: 1200px){
+    .tab__item, .price__item--title, .price__item--value{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 768px){
+    .price__button{
+        margin-top: 2rem;
+    }
+
+    .tab__inner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tab__item{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+        background: #fff;
+    }
+
+    .tab__item.active{
+        background: #21B24A;
+        color: #fff;
+    }
+
+    .tab__item:before{
+        display: none;
+    }
+
+    .price__item{
+        padding: 1.3rem 2rem;
+    }
+}
+@media(max-width: 480px){
+    .tab__item, .price__item--title, .price__item--value{
+        font-size: 1.8rem;
+    }
+
+    .tab__content{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,35 @@
+/* Наши работы */
+.work__content{
+    width: 100%;
+    padding: 0rem 3rem;
+}
+
+.work__item--img{
+    width: 100%;
+    height: auto;
+}
+
+.work__item--title{
+    margin-top: 2rem;
+    color: #151515;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.work__item--more{
+    margin-top: 1.5rem;
+    color: #21b24a;
+    font-weight: 600;
+}
+
+@media(max-width: 1200px){
+    .work__item--title{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+}
+@media(max-width: 480px){
+    .work__content{
+        padding: 0;
+    }
+}

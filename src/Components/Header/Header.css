@@ -1,0 +1,123 @@
+/* Шапка */
+.header{
+    width: 100%;
+    background: #363636;
+    transition: .2s linear;
+}
+
+.header.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header__inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__call--icon{
+    margin-right: .5rem;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav--link{
+    font-size: 1.8rem;
+    padding: 2.8rem 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    transition: .2s linear;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__nav--link:hover{
+    background: #21b24a;
+}
+
+.header__nav--link:hover .header__nav--link--arrow, .header__nav--link--arrow.active{
+    transform: rotate(-180deg);
+}
+
+.header__nav--link--arrow{
+    margin-left: 0.5rem;
+    width: 13px;
+    position: relative;
+    top: 1px;
+    transition: .2s linear;
+}
+
+.header__nav--link:hover .dropdown__menu{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dropdown__menu{
+    width: 310px;
+    background: #FFFFFF;
+    box-shadow: 0px 14.0436px 28.0873px rgba(154, 170, 207, 0.15);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: .2s linear;
+}
+
+.dropdown__menu--link{
+    padding: 1.4rem 2.1rem;
+    color: #151515;
+    width: 100%;
+}
+
+.dropdown__menu--link:hover{
+    background: #F8F8F8;
+    color: #21b24a;
+}
+
+.menu, .close{
+    display: none;
+    cursor: pointer;
+    width: 30px;
+}
+
+@media(max-width: 1200px){
+    .header__nav--link{
+        font-size: 1.6rem;
+        padding: 2.5rem 1.3rem;
+    }
+
+    .header__call{
+        padding: 1.3rem 1.8rem;
+    }
+}
+@media(max-width: 998px){
+    .header{
+        padding: 1.5rem 0;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .menu.active, .close.active{
+        display: block;
+    }
+}
+@media(max-width: 480px){
+    .header__call{
+        display: none;
+    }
+}

@@ -1,0 +1,135 @@
+/* Форма */
+.form{
+    padding: 9rem 0;
+}
+
+.form__inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__text--inner{
+    max-width: 550px;
+}
+
+.form__content{
+    max-width: 570px;
+    background: #FFFFFF;
+    box-shadow: 0px 7.39344px 21.6116px rgba(154, 170, 207, 0.15);
+    padding: 5rem;
+}
+
+.form__input--inner{
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.form__input--inner:first-child{
+    margin-top: 0;
+}
+
+.form__input{
+    width: 100%;
+    padding: 1.5rem 1.1rem;
+    border-bottom: 1px solid #CECECE;
+    color: #5b5b5b;
+}
+
+.form__input:focus{
+    border-bottom: 1px solid #21B24A;
+}
+
+.form__input--label--inner{
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.form__input--label{
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.form__input--label:before, .form__input--label:after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.form__input--label:after{
+    width: 11px;
+    height: 11px;
+    border: none;
+    background: #21B24A;
+    left: 2px;
+    top: 4px;
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.input__placeholder{
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 11px;
+    pointer-events: none;
+    color: #a5a5a5;
+    transition: .2s linear;
+}
+
+.input__placeholder.active, .form__input:focus + .input__placeholder{
+    bottom: 100%;
+    transform: translateY(50%);
+    font-size: 1.4rem;
+    color: #cecece;
+}
+
+@media(max-width: 1200px){
+    .form__text--inner, .form__content{
+        max-width: 430px;
+    }
+
+    .form__content{
+        padding: 2rem;
+    }
+}
+@media(max-width: 998px){
+    .form{
+        padding: 4.5rem 0;
+    }
+
+    .form__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__text--inner{
+        max-width: 100%;
+    }
+
+    .form__content{
+        margin-top: 3rem;
+    }
+}
+@media(max-width: 768px){
+    .form__content{
+        max-width: 100%;
+    }
+
+    .form__input{
+        padding: 1rem;
+    }
+
+    .form{
+        padding: 3rem 0;
+    }
+}

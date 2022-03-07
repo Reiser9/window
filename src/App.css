@@ -4,221 +4,41 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-ExtraBold.eot');
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('assets/fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-ExtraBold.woff') format('woff'),
-        url('assets/fonts/Gilroy-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-Heavy.eot');
-    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
-        url('assets/fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-Heavy.woff') format('woff'),
-        url('assets/fonts/Gilroy-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-LightItalic.eot');
-    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
-        url('assets/fonts/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-LightItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-ThinItalic.eot');
-    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
-        url('assets/fonts/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-ThinItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-BlackItalic.eot');
-    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
-        url('assets/fonts/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-BlackItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-BoldItalic.eot');
-    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
-        url('assets/fonts/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-BoldItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-SemiBold.eot');
-    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-        url('assets/fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-SemiBold.woff') format('woff'),
-        url('assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-UltraLightItalic.eot');
-    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
-        url('assets/fonts/Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-UltraLightItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-UltraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-SemiBoldItalic.eot');
-    src: local('Gilroy SemiBold Italic'), local('Gilroy-SemiBoldItalic'),
-        url('assets/fonts/Gilroy-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-SemiBoldItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-Light.eot');
-    src: local('Gilroy Light'), local('Gilroy-Light'),
-        url('assets/fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-Light.woff') format('woff'),
-        url('assets/fonts/Gilroy-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-MediumItalic.eot');
-    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
-        url('assets/fonts/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-MediumItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-ExtraBoldItalic.eot');
-    src: local('Gilroy ExtraBold Italic'), local('Gilroy-ExtraBoldItalic'),
-        url('assets/fonts/Gilroy-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-ExtraBoldItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-Regular.eot');
     src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-Regular.woff') format('woff'),
-        url('assets/fonts/Gilroy-Regular.ttf') format('truetype');
+        url('assets/fonts/Gilroy-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-HeavyItalic.eot');
-    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
-        url('assets/fonts/Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-HeavyItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-HeavyItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-Medium.eot');
     src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-Medium.woff') format('woff'),
-        url('assets/fonts/Gilroy-Medium.ttf') format('truetype');
+        url('assets/fonts/Gilroy-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-RegularItalic.eot');
-    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
-        url('assets/fonts/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-RegularItalic.woff') format('woff'),
-        url('assets/fonts/Gilroy-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-UltraLight.eot');
-    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
-        url('assets/fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-UltraLight.woff') format('woff'),
-        url('assets/fonts/Gilroy-UltraLight.ttf') format('truetype');
-    font-weight: 200;
+    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+        url('assets/fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-Bold.eot');
     src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url('assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-Bold.woff') format('woff'),
-        url('assets/fonts/Gilroy-Bold.ttf') format('truetype');
+        url('assets/fonts/Gilroy-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-Thin.eot');
-    src: local('Gilroy Thin'), local('Gilroy-Thin'),
-        url('assets/fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-Thin.woff') format('woff'),
-        url('assets/fonts/Gilroy-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('assets/fonts/Gilroy-Black.eot');
-    src: local('Gilroy Black'), local('Gilroy-Black'),
-        url('assets/fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/Gilroy-Black.woff') format('woff'),
-        url('assets/fonts/Gilroy-Black.ttf') format('truetype');
-    font-weight: 900;
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+        url('assets/fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -401,157 +221,6 @@ input::-webkit-inner-spin-button{
     padding: 0rem 0rem 5rem 0;
 }
 
-/* Шапка */
-.header{
-    width: 100%;
-    background: #363636;
-    transition: .2s linear;
-}
-
-.header.fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.header__inner{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__call--icon{
-    margin-right: .5rem;
-}
-
-.header__nav{
-    display: flex;
-    align-items: center;
-}
-
-.header__nav--link{
-    font-size: 1.8rem;
-    padding: 2.8rem 1.6rem;
-    color: #fff;
-    font-weight: 500;
-    transition: .2s linear;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.header__nav--link:hover{
-    background: #21b24a;
-}
-
-.header__nav--link:hover .header__nav--link--arrow, .header__nav--link--arrow.active{
-    transform: rotate(-180deg);
-}
-
-.header__nav--link--arrow{
-    margin-left: 0.5rem;
-    position: relative;
-    top: 1px;
-    transition: .2s linear;
-}
-
-.header__nav--link:hover .dropdown__menu{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.dropdown__menu{
-    width: 310px;
-    background: #FFFFFF;
-    box-shadow: 0px 14.0436px 28.0873px rgba(154, 170, 207, 0.15);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    opacity: 0;
-    z-index: 3;
-    pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    transition: .2s linear;
-}
-
-.dropdown__menu--link{
-    padding: 1.4rem 2.1rem;
-    color: #151515;
-    width: 100%;
-}
-
-.dropdown__menu--link:hover{
-    background: #F8F8F8;
-    color: #21b24a;
-}
-
-.menu, .close{
-    display: none;
-    cursor: pointer;
-}
-
-/* Сингл страница */
-.single{
-    padding: 4rem 0rem 5.5rem 0;
-    background: url("assets/img/main-img2.png") center no-repeat;
-    background-size: cover;
-}
-
-.breadcrumb{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.breadcrumb__link, .breadcrumb__split, .breadcrumb__current{
-    margin-right: 2rem;
-}
-
-.breadcrumb__link, .breadcrumb__split{
-    color: #5b5b5b;
-    font-size: 1.8rem;
-}
-
-.breadcrumb__link:last-child{
-    margin-right: 0;
-}
-
-.breadcrumb__link:hover{
-    color: #21b24a;
-}
-
-.breadcrumb__current{
-    font-weight: 600;
-    color: #21b24a;
-}
-
-.single__text--inner{
-    margin-top: 5rem;
-}
-
-.single__title{
-    font-size: 5rem;
-    font-weight: 800;
-    color: #3d3d3d;
-}
-
-.single__text{
-    max-width: 550px;
-    margin-top: 2rem;
-    color: #3d3d3d;
-    font-size: 1.8rem;
-}
-
-.single__button{
-    margin-top: 3rem;
-    padding: 2rem 5.5rem;
-}
-
 .point__inner{
     margin-top: 1.5rem;
 }
@@ -582,375 +251,6 @@ input::-webkit-inner-spin-button{
     margin-top: 0;
 }
 
-/* Стоимость */
-.price__button{
-    margin-top: 5rem;
-}
-
-.tab__inner{
-    width: 100%;
-    border-bottom: 4px solid #EAEDF4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tab__item{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #989898;
-    padding: 0rem 2rem 1.5rem 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: .2s linear;
-}
-
-.tab__item:before{
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    background: #21b24a;
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    transition: .2s linear;
-    opacity: 0;
-}
-
-.tab__item.active:before, .tab__item:hover:before{
-    opacity: 1;
-}
-
-.tab__item.active{
-    color: #21b24a;
-}
-
-.tab__content{
-    display: none;
-    margin-top: 3rem;
-}
-
-.tab__content.active{
-    display: flex;
-}
-
-.price__item{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2.5rem 4rem;
-    background: #FFF;
-}
-
-.price__item:nth-child(even){
-    background: #EFF1F4;
-}
-
-.price__item--title, .price__item--value{
-    font-size: 2.4rem;
-    color: #151515;
-    font-weight: 600;
-}
-
-.price__item--value{
-    font-weight: 500;
-}
-
-/* Наши работы */
-.work__content{
-    width: 100%;
-    padding: 0rem 3rem;
-}
-
-.work__item--img{
-    width: 100%;
-    height: auto;
-}
-
-.work__item--title{
-    margin-top: 2rem;
-    color: #151515;
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
-.work__item--more{
-    margin-top: 1.5rem;
-    color: #21b24a;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-/* О нас */
-.about__inner{
-    position: relative;
-}
-
-.about__img{
-    max-width: 100%;
-}
-
-.about__text--inner{
-    max-width: 750px;
-    position: absolute;
-    bottom: -25px;
-    right: 0;
-    padding: 4rem 5.5rem;
-    background: #fff;
-}
-
-/* Отзывы */
-.review__content{
-    width: 100%;
-    padding: 0rem 3rem 5rem 3rem;
-}
-
-.review__item{
-    background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0px 7.39344px 21.6116px rgba(154, 170, 207, 0.04);
-    padding: 4rem;
-}
-
-.review__item--text{
-    font-size: 1.8rem;
-    margin-top: 1.5rem;
-    color: #5b5b5b;
-}
-
-.review__item--name{
-    margin-top: 3rem;
-    color: #151515;
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
-.slick__dot{
-    width: 8px;
-    height: 8px;
-    background: #21B24A;
-    border-radius: 50px;
-    transition: .2s linear;
-}
-
-.slick__dot.swiper-pagination-bullet-active{
-    width: 32px;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 2rem;
-    color: #414141; 
-}
-
-.swiper-button-next, .swiper-button-prev{
-    transform: translateY(-50%);
-    left: 0;
-}
-
-.swiper-button-next{
-    left: auto;
-    right: 0;
-}
-
-/* Форма */
-.form{
-    padding: 9rem 0;
-}
-
-.form__inner{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.form__text--inner{
-    max-width: 550px;
-}
-
-.form__content{
-    max-width: 570px;
-    background: #FFFFFF;
-    box-shadow: 0px 7.39344px 21.6116px rgba(154, 170, 207, 0.15);
-    padding: 5rem;
-}
-
-.form__input--inner{
-    width: 100%;
-    position: relative;
-    margin-top: 2rem;
-}
-
-.form__input--inner:first-child{
-    margin-top: 0;
-}
-
-.form__input{
-    width: 100%;
-    padding: 1.5rem 1.1rem;
-    border-bottom: 1px solid #CECECE;
-    color: #5b5b5b;
-}
-
-.form__input:focus{
-    border-bottom: 1px solid #21B24A;
-}
-
-.form__input--label--inner{
-    width: 100%;
-    margin-top: 2.5rem;
-}
-
-.form__input--label{
-    position: relative;
-    padding-left: 2.5rem;
-    cursor: pointer;
-    display: block;
-}
-
-.form__input--label:before, .form__input--label:after{
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #000;
-    position: absolute;
-    left: 0;
-    top: 2px;
-}
-
-.form__input--label:after{
-    width: 11px;
-    height: 11px;
-    border: none;
-    background: #21B24A;
-    left: 2px;
-    top: 4px;
-    opacity: 0;
-    transition: .2s linear;
-}
-
-.input__placeholder{
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    left: 11px;
-    pointer-events: none;
-    color: #a5a5a5;
-    transition: .2s linear;
-}
-
-.input__placeholder.active, .form__input:focus + .input__placeholder{
-    bottom: 100%;
-    transform: translateY(50%);
-    font-size: 1.4rem;
-    color: #cecece;
-}
-
-/* Подвал */
-.footer{
-    padding: 10.6rem 0rem 2.5rem 0;
-    background: #35353C;
-}
-
-.footer__content{
-    width: 100%;
-    padding-bottom: 8.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, .8);
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.footer__copy{
-    font-size: 1.4rem;
-    color: #fff;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.footer__logo{
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.8rem;
-}
-
-.footer__item--title{
-    color: #fff;
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
-.footer__item--nav--inner{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 3rem;
-}
-
-.footer__item--nav--link{
-    font-size: 1.8rem;
-    color: #a9a9a9;
-    margin-top: 1.2rem;
-}
-
-.footer__item--nav--link:first-child{
-    margin-top: 0;
-}
-
-a.footer__item--nav--link:hover{
-    color: #fff;
-}
-
-/* Модальное меню */
-.modal__menu{
-    width: 100%;
-    height: calc(100vh - 77px);
-    overflow-y: auto;
-    position: fixed;
-    top: 77px;
-    left: 0;
-    background: #464646;
-    z-index: 100;
-    transition: .3s ease-in-out;
-    opacity: 0;
-    transform: translateX(-110%);
-}
-
-.modal__menu.active{
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.modal__menu--inner{
-    padding: 3rem 0;
-}
-
-.modal__menu--link{
-    color: #fff;
-    margin-top: 2.5rem;
-    font-size: 2.2rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.modal__menu--link:first-child{
-    margin-top: 0;
-}
-
-.mobile__call{
-    display: none;
-}
-
-.modal__menu--dropdown{
-    display: none;
-    padding-left: 2rem;
-    margin-top: 2rem;
-}
-
 /* Адаптив */
 @media(max-width: 1340px){
     .container{
@@ -961,74 +261,10 @@ a.footer__item--nav--link:hover{
     .container{
         max-width: 978px;
     }
-
-    .header__nav--link{
-        font-size: 1.6rem;
-        padding: 2.5rem 1.3rem;
-    }
-
-    .header__call{
-        padding: 1.3rem 1.8rem;
-    }
-
-    .form__text--inner, .form__content{
-        max-width: 430px;
-    }
-
-    .form__content{
-        padding: 2rem;
-    }
-
-    .review__item--text{
-        font-size: 1.6rem;
-    }
-
-    .review__item--name, .work__item--title{
-        margin-top: 2rem;
-        font-size: 2rem;
-    }
-
-    .tab__item, .price__item--title, .price__item--value{
-        font-size: 2rem;
-    }
 }
 @media(max-width: 998px){
     .container{
         max-width: 748px;
-    }
-
-    .header{
-        padding: 1.5rem 0;
-    }
-
-    .header__nav{
-        display: none;
-    }
-
-    .menu.active, .close.active{
-        display: block;
-    }
-
-    .footer__content{
-        flex-wrap: wrap;
-        padding-bottom: 4rem;
-    }
-
-    .footer__item{
-        width: 50%;
-        margin-top: 3rem;
-    }
-
-    .footer__item:nth-child(2){
-        margin-top: 0;
-    }
-
-    .footer{
-        padding: 5rem 0 2.5rem 0;
-    }
-
-    .single__title{
-        font-size: 4.5rem;
     }
 
     .title{
@@ -1039,27 +275,8 @@ a.footer__item--nav--link:hover{
         margin-top: 3rem;
     }
 
-    .template, .form{
+    .template{
         padding: 4.5rem 0;
-    }
-
-    .form__inner{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form__text--inner{
-        max-width: 100%;
-    }
-
-    .form__content{
-        margin-top: 3rem;
-    }
-
-    .about__text--inner{
-        position: relative;
-        bottom: 0;
-        padding: 2.5rem;
     }
 }
 @media(max-width: 768px){
@@ -1067,34 +284,8 @@ a.footer__item--nav--link:hover{
         max-width: 460px;
     }
 
-    .footer__item{
-        width: 100%;
-    }
-
-    .footer__item:nth-child(2){
-        margin-top: 3rem;
-    }
-
-    .single__title{
-        font-size: 3.5rem;
-    }
-
-    .breadcrumb__link, .single__text{
-        font-size: 1.6rem;
-    }
-
-    .breadcrumb__link, .breadcrumb__split, .breadcrumb__current{
-        margin-right: 1rem;
-    }
-
-    .single__text--inner{
-        margin-top: 3rem;
-    }
-
-    .single__button{
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .title{
+        font-size: 3rem;
     }
 
     .text__inner{
@@ -1104,107 +295,21 @@ a.footer__item--nav--link:hover{
     .text{
         font-size: 1.6rem;
     }
-
-    .title{
-        font-size: 3rem;
-    }
-
-    .form__content{
-        max-width: 100%;
-    }
-
-    .form__input{
-        padding: 1rem;
-    }
-
-    .review__item{
-        padding: 2rem;
-    }
-
-    .price__button{
-        margin-top: 2rem;
-    }
-
-    .tab__inner{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .tab__item{
-        width: 100%;
-        text-align: center;
-        padding: 1rem 2rem;
-        background: #fff;
-    }
-
-    .tab__item.active{
-        background: #21B24A;
-        color: #fff;
-    }
-
-    .tab__item:before{
-        display: none;
-    }
-
-    .price__item{
-        padding: 1.3rem 2rem;
-    }
 }
 @media(max-width: 480px){
     .container{
         max-width: 300px;
     }
 
-    .header__call{
-        display: none;
-    }
-
-    .mobile__call{
-        display: flex;
-        margin-top: 3rem;
-    }
-
-    .footer__item--nav--inner{
-        margin-top: 2rem;
-    }
-
-    .single{
-        padding: 3rem 0;
-    }
-
     .title{
         font-size: 2.5rem;
-    }
-
-    .swiper-button-next, .swiper-button-prev{
-        display: none;
-    }
-
-    .review__content{
-        padding: 0rem 0rem 5rem 0;
-    }
-
-    .template, .form{
-        padding: 3rem 0;
-    }
-
-    .about__text--inner{
-        padding: 1.5rem;
-    }
-
-    .work__content{
-        padding: 0;
     }
 
     .default__margin{
         margin-top: 2rem;
     }
 
-    .tab__item, .price__item--title, .price__item--value{
-        font-size: 1.8rem;
-    }
-
-    .tab__content{
-        margin-top: 2rem;
+    .template{
+        padding: 3rem 0;
     }
 }

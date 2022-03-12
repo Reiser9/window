@@ -1,0 +1,17 @@
+/* Материалы */
+.material__content{
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.material__inner .tab__content{
+    margin-top: 0;
+}
+
+@media(max-width: 480px){
+    .material__content{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

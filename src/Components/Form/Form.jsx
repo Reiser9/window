@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import './Form.css';
 
-const Form = () => {
+const Form = ({bg = false}) => {
 	React.useEffect(() => {
 	    $(".form__input").on("blur", function(){
 	        if($(this).val().trim() !== '') $(this).siblings(".input__placeholder").addClass("active");
@@ -12,7 +12,9 @@ const Form = () => {
 	}, []);
 
 	return(
-		<section className="form">
+		<section className={`form${bg ? ' bg' : ''}`}>
+			{bg && <div className="form__bg"></div>}
+
 		    <div className="container">
 		        <div className="form__inner">
 		            <div className="form__text--inner flex">
@@ -61,7 +63,7 @@ const Form = () => {
 		                <div className="form__input--label--inner">
 		                    <input id="agree" type="checkbox" className="input__checkbox" />
 
-		                    <label for="agree" className="form__input--label">
+		                    <label htmlFor="agree" className="form__input--label">
 		                        Я согласен(на) на обработку персональных данных
 		                    </label>
 		                </div>

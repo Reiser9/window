@@ -43,11 +43,14 @@
 }
 
 .tab__content{
-    display: none;
     margin-top: 3rem;
 }
 
-.tab__content.active{
+.tab__value{
+    display: none;
+}
+
+.tab__value.active{
     display: flex;
 }
 

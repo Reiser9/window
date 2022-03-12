@@ -1,0 +1,65 @@
+/* Серый блок */
+.grey{
+    padding: 9rem 0;
+    background: #31313F;
+}
+
+.grey__inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grey__img{
+    width: 500px;
+    height: auto;
+}
+
+.grey__text--inner{
+    max-width: 650px;
+}
+
+.grey__text--link{
+    margin-top: 4rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.grey__text--point--inner{
+    margin-top: 2.5rem;
+}
+
+@media(max-width: 1200px){
+    .grey__text--inner{
+        max-width: 540px;
+    }
+
+    .grey__img{
+        width: 360px;
+    }
+}
+@media(max-width: 998px){
+    .grey__inner{
+        flex-direction: column;
+    }
+
+    .grey__text--inner{
+        margin-top: 3rem;
+        max-width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .grey{
+        padding: 5rem 0;
+    }
+}
+@media(max-width: 480px){
+    .grey{
+        padding: 3rem 0;
+    }
+
+    .grey__img{
+        width: 100%;
+    }
+}

@@ -12,17 +12,11 @@ const Template = () => {
 	return(
 		<main>
             <Single />
-
             <Tabs />
-
             <Works />
-
             <InfoBlock />
-
             <Review />
-
             <TextBlock />
-
             <Form />
         </main>
 	)

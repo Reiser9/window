@@ -1,18 +1,8 @@
 import React from 'react';
-import $ from 'jquery';
 
 import './Tabs.css';
 
 const Tabs = () => {
-	React.useEffect(() => {
-	    $(".tab__item").on("click", function(){
-	        $(".tab__item").removeClass("active");
-	        $(this).addClass("active");
-	        $(".tab__content").removeClass("active");
-	        $(".tab__content[data-tab="+$(this).attr("data-tab")+"]").addClass("active");
-	    });
-	}, []);
-
 	return(
 		<section className="template">
 		    <div className="container">
@@ -21,21 +11,21 @@ const Tabs = () => {
 		                Стоимость мягких окон для беседок
 		            </h2>
 
-		            <div className="tab__inner default__margin">
-		                <span className="tab__item active" data-tab="1">
+		            <div className="tab__inner tab__index default__margin">
+		                <span className="tab__item tab active" data-tab="1">
 		                    Мягкие окона более 50 м²
 		                </span>
 
-		                <span className="tab__item" data-tab="2">
+		                <span className="tab__item tab" data-tab="2">
 		                    Мягкие окона от 15 м²  до 50 м²
 		                </span>
 
-		                <span className="tab__item" data-tab="3">
+		                <span className="tab__item tab" data-tab="3">
 		                    Мягкие окона до 15 м²
 		                </span>
 		            </div>
 
-		            <div className="tab__content flex active" data-tab="1">
+		            <div className="tab__content flex tab__value active" data-tab="1">
 		                <div className="price__item">
 		                    <p className="price__item--title">
 		                        Стандарт
@@ -77,7 +67,7 @@ const Tabs = () => {
 		                </div>
 		            </div>
 
-		            <div className="tab__content flex" data-tab="2">
+		            <div className="tab__content tab__value flex" data-tab="2">
 		                <div className="price__item">
 		                    <p className="price__item--title">
 		                        Стандарт 2
@@ -119,7 +109,7 @@ const Tabs = () => {
 		                </div>
 		            </div>
 
-		            <div className="tab__content flex" data-tab="3">
+		            <div className="tab__content tab__value flex" data-tab="3">
 		                <div className="price__item">
 		                    <p className="price__item--title">
 		                        Стандарт 3

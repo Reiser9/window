@@ -1,0 +1,44 @@
+/* Преимущества */
+.points__item{
+    padding: 3.5rem 4.5rem;
+    background: #fff;
+}
+
+.points__item--img{
+    width: 45px;
+    height: auto;
+}
+
+.points__item--title{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: #151515;
+    font-size: 2.4rem;
+}
+
+.points__item--text{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #5b5b5b;
+}
+
+@media(max-width: 768px){
+    .points__item{
+        padding: 2rem;
+    }
+
+    .points__item--title{
+        font-size: 2rem;
+    }
+
+    .points__item--text{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width: 480px){
+    .points__content{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

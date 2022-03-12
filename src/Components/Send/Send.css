@@ -1,0 +1,118 @@
+/* Помочь с выбором */
+.help{
+    padding: 8rem 0;
+    background: url("../../assets/img/send-img.webp") center no-repeat;
+    background-size: cover;
+}
+
+.help__inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.help__text--inner{
+    max-width: 620px;
+}
+
+.help__form--inner{
+    display: flex;
+}
+
+.help__text--title{
+    font-size: 3.5rem;
+    color: #151515;
+    font-weight: 600;
+}
+
+.help__text--text, .choose__text{
+    font-size: 1.8rem;
+    color: #5b5b5b;
+    margin-top: 2rem;
+}
+
+.help__form--input{
+    padding: 2.5rem 2rem;
+    width: 310px;
+}
+
+.help__form--button{
+    font-weight: 600;
+    padding: 2rem 8rem;
+}
+
+@media(max-width: 1340px){
+    .help__text--inner{
+        max-width: 550px;
+    }
+}
+@media(max-width: 1200px){
+    .help__form--button{
+        padding: 2rem 3rem;
+    }
+
+    .help__text--inner{
+        max-width: 420px;
+    }
+}
+@media(max-width: 998px){
+    .help__inner, .help__text--inner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .help__form--inner{
+        margin-top: 2rem;
+    }
+
+    .help__text--title, .help__text--text{
+        text-align: center;
+    }
+
+    .help__text--inner{
+        max-width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .help__form--input{
+        padding: 1.3rem;
+    }
+
+    .help__form--button{
+        padding: 1.3rem 3rem;
+    }
+
+    .help{
+        padding: 5rem 0;
+    }
+
+    .help__text--title{
+        font-size: 2.5rem;
+    }
+
+    .help__text--text{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+}
+@media(max-width: 480px){
+    .help__form--inner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .help__form--input, .help__form--inner, .help__form--button{
+        width: 100%;
+    }
+
+    .help__form--button{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .help{
+        padding: 3rem 0;
+    }
+}

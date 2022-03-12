@@ -18,16 +18,16 @@ const Works = () => {
 		            </h2>
 
 		            <Swiper className="default__margin work__content" loop modules={[Navigation]} spaceBetween={30} slidesPerView={3} navigation breakpoints={{
-		                    998: {
-		                        slidesPerView: 3
-		                    },
-		                    768: {
-		                        slidesPerView: 2
-		                    },
-		                    0: {
-		                        slidesPerView: 1
-		                    }
-		                }}>
+		                998: {
+		                    slidesPerView: 3
+		                },
+		                768: {
+		                    slidesPerView: 2
+		                },
+		                0: {
+		                    slidesPerView: 1
+		                }
+		            }}>
 		                <SwiperSlide className="work__item flex">
 		                    <img src="assets/img/work1.jpg" className="work__item--img" alt="Наши работы" />
 

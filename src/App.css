@@ -48,6 +48,7 @@ body{
     overflow-x: hidden;
     font-size: 1.6rem;
     font-family: 'Gilroy', sans-serif;
+    background: #F8F9FA;
 }
 
 .scroll{
@@ -171,13 +172,23 @@ input::-webkit-inner-spin-button{
 
 .template{
     padding: 7.5rem 0;
-    background: #F8F9FA;
 }
 
 .title{
     color: #151515;
     font-size: 4.2rem;
     font-weight: 700;
+}
+
+.subtitle{
+    color: #151515;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.text{
+    color: #5b5b5b;
+    font-size: 1.8rem;
 }
 
 .center{
@@ -189,11 +200,6 @@ input::-webkit-inner-spin-button{
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-}
-
-.text{
-    color: #5b5b5b;
-    font-size: 1.8rem;
 }
 
 .default__margin{
@@ -226,9 +232,13 @@ input::-webkit-inner-spin-button{
 }
 
 .point__text{
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
     padding-left: 1.2rem;
     position: relative;
+}
+
+.point__text:first-child{
+    margin-top: 0;
 }
 
 .point__text:before{
@@ -243,12 +253,39 @@ input::-webkit-inner-spin-button{
     left: 0;
 }
 
+.point__text.white__color:before{
+    background: #fff;
+}
+
 .wrap__text{
     margin-top: 1.5rem;
 }
 
 .wrap__text:first-child{
     margin-top: 0;
+}
+
+.green__color{
+    color: #21b24a;
+}
+
+.white__color{
+    color: #fff;
+}
+
+.text__point{
+    font-size: 1.8rem;
+    color: #3d3d3d;
+    display: flex;
+    align-items: flex-start;
+}
+
+.text__point--icon{
+    width: 10px;
+    height: auto;
+    margin-right: 1rem;
+    position: relative;
+    top: 6px;
 }
 
 /* Адаптив */
@@ -293,6 +330,10 @@ input::-webkit-inner-spin-button{
     }
 
     .text{
+        font-size: 1.6rem;
+    }
+
+    .text__point{
         font-size: 1.6rem;
     }
 }

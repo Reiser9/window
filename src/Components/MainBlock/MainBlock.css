@@ -1,0 +1,77 @@
+/* Главный блок */
+.main{
+    padding: 25rem 0rem 20rem 0;
+    background: url("../../assets/img/main-img.webp") center no-repeat;
+    background-size: cover;
+}
+
+.main__text--inner{
+    max-width: 690px;
+}
+
+.main__text--title{
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: #3d3d3d;
+}
+
+.main__text--button{
+    margin-top: 5rem;
+    padding: 2.2rem 4rem;
+}
+
+.main__text--point--inner{
+    margin-top: 1.5rem;
+}
+
+.main__text--point{
+    margin-top: 1.5rem;
+    max-width: 400px;
+}
+
+.main__text--point:first-child{
+    margin-top: 0;
+}
+
+@media(max-width: 1200px){
+    .main{
+        padding: 18rem 0;
+        background-position-x: -120px;
+    }
+}
+@media(max-width: 998px){
+    .main{
+        padding: 12rem 0;
+    }
+
+    .main__text--title{
+        font-size: 4rem;
+    }
+}
+@media(max-width: 768px){
+    .main{
+        padding: 7rem 0;
+    }
+
+    .main__text--title{
+        font-size: 3.5rem;
+    }
+
+    .main__text--button{
+        margin-top: 3rem;
+        padding: 1.3rem 3rem;
+    }
+}
+@media(max-width: 480px){
+    .main{
+        padding: 3rem 0;
+    }
+
+    .main__text--title{
+        font-size: 3rem;
+    }
+
+    .main__text--point--inner{
+        margin-top: 3rem;
+    }
+}
